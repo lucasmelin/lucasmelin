@@ -1,6 +1,6 @@
 <img align="left" width="300" src="https://i.postimg.cc/pdQvRZgG/Lucas-Octocat.png"> <samp> :coffee: Hey! <br>
 
-  :man_technologist: I work on developer tools at the Bank of Canada.<br>
+  :man_technologist: I work on developer tools.<br>
   :city_sunrise: Based in Ottawa.<br>
   :jigsaw: Doing the NYT Crossword and listening to podcasts.<br>
   
