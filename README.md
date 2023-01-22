@@ -12,7 +12,7 @@ import os
 
 cog.outl(f"  {os.environ['emoji']} {os.environ['message']}")
 ]]]-->
-🎧 Doing the NYT Crossword and listening to podcasts.
+🌧️ Exploring the Rain World.
 <!---[[[end]]]-->
 
 <details>
