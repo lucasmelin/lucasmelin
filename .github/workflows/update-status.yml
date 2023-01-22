@@ -2,6 +2,9 @@ name: Update README and status
 
 on:
   workflow_dispatch:
+  push:
+  schedule:
+    - cron: "17 * * * *"
 
 permissions: write-all
 
