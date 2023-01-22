@@ -1,0 +1,55 @@
+name: Update README and status
+
+on:
+  workflow_dispatch:
+
+permissions: write-all
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: setup python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.x
+
+      - name: install cog
+        run: pip install cogapp
+
+      - name: get omg.lol status
+        id: extract
+        run: |
+          read emoji message < <(echo $(curl -s --location --request GET 'https://api.omg.lol/address/lucasmelin/statuses/latest' | jq -r '.response.status.emoji, .response.status.content'))
+          echo "emoji=$emoji" >> $GITHUB_ENV
+          echo "message=$message" >> $GITHUB_ENV
+
+      - name: generate readme
+        run: cog -r README.md
+
+      - name: commit changes
+        run: |
+          git diff
+          git config --global user.name 'Lucas Melin'
+          git config --global user.email 'lucasmelin@users.noreply.github.com'
+          git add -A
+          git commit -m ":robot: Automated README update" || exit 0
+          git push
+
+      - name: update github user status
+        env:
+          GH_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+        run: |
+          gh api graphql -F emoji='${{ env.emoji }}' -F message='${{ env.message }}' -f query='
+            mutation ($emoji: String!, $message: String!) {
+              changeUserStatus(input: {emoji: $emoji, message: $message}) {
+                status {
+                  emoji
+                  message
+                }
+              }
+            }
+          '
