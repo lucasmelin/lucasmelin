@@ -25,7 +25,7 @@ jobs:
 
       - name: get omg.lol status
         id: extract
-        uses: lucasmelin/ omg.lol-gh-status-sync-action@v1.0.0
+        uses: lucasmelin/omg.lol-gh-status-sync-action@v1.0.0
         with:
           omg_lol_user: lucasmelin
           github_token: ${{ secrets.PERSONAL_TOKEN }}
