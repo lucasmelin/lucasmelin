@@ -30,11 +30,13 @@ jobs:
           omg_lol_user: lucasmelin
           github_token: ${{ secrets.PERSONAL_TOKEN }}
 
+      - name: set env vars
+        run: |
+          echo "emoji=${{ steps.extract.outputs.emoji }}" >> $GITHUB_ENV
+          echo "message=${{ steps.extract.outputs.message }}" >> $GITHUB_ENV
+
       - name: generate readme
         run: cog -r README.md
-        env:
-          emoji: ${{ steps.extract.outputs.emoji }}
-          message: ${{ steps.extract.outputs.message }}
 
       - name: commit changes
         run: |
