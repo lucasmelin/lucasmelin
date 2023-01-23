@@ -12,7 +12,7 @@ import os
 
 cog.outl(f"  {os.environ['emoji']} {os.environ['message']}")
 ]]]-->
-🫀 Enjoying poking at the omg.lol API.
+   
 <!---[[[end]]]-->
 
 <details>
