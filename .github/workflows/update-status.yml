@@ -32,6 +32,9 @@ jobs:
 
       - name: generate readme
         run: cog -r README.md
+        env:
+          emoji: ${{ steps.extract.outputs.emoji }}
+          message: ${{ steps.extract.outputs.message }}
 
       - name: commit changes
         run: |
