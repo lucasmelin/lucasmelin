@@ -12,7 +12,7 @@ import os
 
 cog.outl(f"  {os.environ['emoji']} {os.environ['message']}")
 ]]]-->
-☃️ Looking forward to a long weekend.
+🏝️ Enjoying a much needed long weekend.
 <!---[[[end]]]-->
 
 <details>
