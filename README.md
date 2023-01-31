@@ -12,7 +12,7 @@ import os
 
 cog.outl(f"  {os.environ['emoji']} {os.environ['message']}")
 ]]]-->
-🍕 Pizza and TV night.
+🧑‍💻 Working on Go stuff.
 <!---[[[end]]]-->
 
 <details>
