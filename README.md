@@ -12,7 +12,7 @@ import os
 
 cog.outl(f"  {os.environ['emoji']} {os.environ['message']}")
 ]]]-->
-☕ YouTube and coffee.
+⏰ It’s Go time.
 <!---[[[end]]]-->
 
 <details>
