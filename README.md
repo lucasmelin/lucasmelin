@@ -12,7 +12,7 @@ import os
 
 cog.outl(f"  {os.environ['emoji']} {os.environ['message']}")
 ]]]-->
-🧩 Looking forward to doing some crosswords.
+🗓️ Hex week is here.
 <!---[[[end]]]-->
 
 <details>
