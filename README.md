@@ -12,7 +12,7 @@ import os
 
 cog.outl(f"  {os.environ['emoji']} {os.environ['message']}")
 ]]]-->
-😴 Crashing after a big week.
+🎮 Really enjoying Patch Quest lately.
 <!---[[[end]]]-->
 
 <details>
