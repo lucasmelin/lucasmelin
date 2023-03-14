@@ -12,7 +12,7 @@ import os
 
 cog.outl(f"  {os.environ['emoji']} {os.environ['message']}")
 ]]]-->
-🎮 Really enjoying Patch Quest lately.
+🕐 Adjusting to the time change
 <!---[[[end]]]-->
 
 <details>
