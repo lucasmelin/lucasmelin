@@ -12,7 +12,7 @@ import os
 
 cog.outl(f"  {os.environ['emoji']} {os.environ['message']}")
 ]]]-->
-🕐 Adjusting to the time change
+🤒 Sick day.
 <!---[[[end]]]-->
 
 <details>
