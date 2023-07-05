@@ -12,7 +12,7 @@ import os
 
 cog.outl(f"  {os.environ['emoji']} {os.environ['message']}")
 ]]]-->
-🏝️ Enjoying a long weekend.
+🏗️ Building stuff.
 <!---[[[end]]]-->
 
 <details>
