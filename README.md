@@ -12,7 +12,7 @@ import os
 
 cog.outl(f"  {os.environ['emoji']} {os.environ['message']}")
 ]]]-->
-⚙️ Switching gears
+🚛 Moving bits from one place to another.
 <!---[[[end]]]-->
 
 <details>
