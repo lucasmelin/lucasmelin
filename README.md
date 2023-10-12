@@ -12,7 +12,7 @@ import os
 
 cog.outl(f"  {os.environ['emoji']} {os.environ['message']}")
 ]]]-->
-🔌 On vacation.
+☁️ Terraforming the cloud.
 <!---[[[end]]]-->
 
 <details>
