@@ -12,7 +12,7 @@ import os
 
 cog.outl(f"  {os.environ['emoji']} {os.environ['message']}")
 ]]]-->
-🏙️ Offsiting in Toronto
+🪼 Readjusting to routine.
 <!---[[[end]]]-->
 
 <details>
